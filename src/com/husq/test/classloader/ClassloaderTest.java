@@ -19,6 +19,7 @@ public class ClassloaderTest {
 			//2，使用自定义classloader加载LoaderClass字节码文件，并解密，运行正常；
 			Class clazz = new MyClassloader("F:\\workspace\\ClassloaderTest\\bin\\com\\husq\\test\\classloader").loadClass("com.husq.test.classloader.MyClass");
 			Date d = (Date)clazz.newInstance();
+			
 			System.out.println(d);
 			
 //			String name = "com.husq.test.classloader.MyClass";
